@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "8000:8000"
+    user: developer
+    command: ./webui.sh --lowvram --precision full --no-half --skip-torch-cuda-test

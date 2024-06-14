@@ -1,0 +1,19 @@
+{
+    "name": "Python Dev Container",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "dev",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.pylintEnabled": true,
+        "python.linting.enabled": true,
+        "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+        "editor.formatOnSave": true
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-azuretools.vscode-docker"
+    ],
+    "remoteUser": "developer"
+}
